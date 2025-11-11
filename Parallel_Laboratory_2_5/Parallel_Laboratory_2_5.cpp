@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
     // Проверка аргументов
     if (argc < 2) {
         if (rank == 0)
-            cerr << "Usage: mpirun -np <processes> ./mpi_pi_series <number_of_iterations>\n";
+            cerr << "Usage: mpiexec -n <processes> <path_to_exe> <number_of_iterations>\n";
 
         // Завершение работы MPI
         MPI_Finalize();
